@@ -120,8 +120,9 @@ const displayModal = (details) => {
               <figure class="w-1/4 mx-auto h-full">
                 <img  src="${details.image}" />
               </figure>
-         
+        
               <div class="card-actions flex justify-between p-2">
+               
                 <div class="badge bg-blue-200">${details.category}</div>
                 <div class="text-thin">
                   <i class="fa-regular fa-star text-yellow-500"></i>
@@ -132,6 +133,7 @@ const displayModal = (details) => {
               <h2 class="text-xl font-semibold text-left ml-4 py-2">
                ${details.title}
               </h2>
+              <p class="ml-4 py-4">${details.description}</p>
               <h2 class="text-2xl font-bold text-left ml-4">$${details.price}</h2>
             
                
