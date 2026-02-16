@@ -192,23 +192,29 @@ const showTrending = (products) => {
 };
 
 document.getElementById("btn-all").onclick = displayAll;
-document.getElementById("md-home").onclick = () => {
-  document.getElementById("trending").classList.remove("hidden");
-  document.getElementById("our-products").classList.add("hidden");
-};
-document.getElementById("md-product").onclick = () => {
-  document.getElementById("our-products").classList.remove("hidden");
-  document.getElementById("trending").classList.add("hidden");
-};
 
-document.getElementById("sm-home").onclick = () => {
+const showHome = () => {
+  document.getElementById("sm-product").style.color = "black";
+  document.getElementById("md-product").style.color = "black";
+  document.getElementById("sm-home").style.color = "purple";
+  document.getElementById("md-home").style.color = "purple";
+
   document.getElementById("trending").classList.remove("hidden");
   document.getElementById("our-products").classList.add("hidden");
+  trending();
 };
-document.getElementById("sm-product").onclick = () => {
+const showProducts = () => {
+  document.getElementById("sm-home").style.color = "black";
+  document.getElementById("md-home").style.color = "black";
+  document.getElementById("sm-product").style.color = "purple";
+  document.getElementById("md-product").style.color = "purple";
   document.getElementById("our-products").classList.remove("hidden");
   document.getElementById("trending").classList.add("hidden");
 };
+document.getElementById("sm-home").onclick = showHome;
+document.getElementById("md-home").onclick = showHome;
+document.getElementById("sm-product").onclick = showProducts;
+document.getElementById("md-product").onclick = showProducts;
 
 displayAll();
 buttonContainer();
