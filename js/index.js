@@ -192,7 +192,7 @@ const showTrending = (products) => {
 };
 
 document.getElementById("btn-all").onclick = displayAll;
-document.querySelectorAll("md-home").onclick = () => {
+document.getElementById("md-home").onclick = () => {
   document.getElementById("trending").classList.remove("hidden");
   document.getElementById("our-products").classList.add("hidden");
 };
@@ -201,7 +201,7 @@ document.getElementById("md-product").onclick = () => {
   document.getElementById("trending").classList.add("hidden");
 };
 
-document.querySelectorAll("sm-home").onclick = () => {
+document.getElementById("sm-home").onclick = () => {
   document.getElementById("trending").classList.remove("hidden");
   document.getElementById("our-products").classList.add("hidden");
 };
