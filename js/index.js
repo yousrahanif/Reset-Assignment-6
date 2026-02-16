@@ -196,8 +196,8 @@ document.getElementById("btn-all").onclick = displayAll;
 const showHome = () => {
   document.getElementById("sm-product").style.color = "black";
   document.getElementById("md-product").style.color = "black";
-  document.getElementById("sm-home").style.color = "purple";
-  document.getElementById("md-home").style.color = "purple";
+  document.getElementById("sm-home").style.color = "blue";
+  document.getElementById("md-home").style.color = "blue";
 
   document.getElementById("trending").classList.remove("hidden");
   document.getElementById("our-products").classList.add("hidden");
@@ -206,8 +206,8 @@ const showHome = () => {
 const showProducts = () => {
   document.getElementById("sm-home").style.color = "black";
   document.getElementById("md-home").style.color = "black";
-  document.getElementById("sm-product").style.color = "purple";
-  document.getElementById("md-product").style.color = "purple";
+  document.getElementById("sm-product").style.color = "blue";
+  document.getElementById("md-product").style.color = "blue";
   document.getElementById("our-products").classList.remove("hidden");
   document.getElementById("trending").classList.add("hidden");
 };
