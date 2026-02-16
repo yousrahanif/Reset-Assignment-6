@@ -201,6 +201,8 @@ const showHome = () => {
 
   document.getElementById("trending").classList.remove("hidden");
   document.getElementById("our-products").classList.add("hidden");
+  document.getElementById("hero").classList.remove("hidden");
+  document.getElementById("why-choose").classList.remove("hidden");
   trending();
 };
 const showProducts = () => {
@@ -210,6 +212,8 @@ const showProducts = () => {
   document.getElementById("md-product").style.color = "blue";
   document.getElementById("our-products").classList.remove("hidden");
   document.getElementById("trending").classList.add("hidden");
+  document.getElementById("hero").classList.add("hidden");
+  document.getElementById("why-choose").classList.add("hidden");
 };
 document.getElementById("sm-home").onclick = showHome;
 document.getElementById("md-home").onclick = showHome;
